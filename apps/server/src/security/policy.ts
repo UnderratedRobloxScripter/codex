@@ -1,3 +1,4 @@
+import type { DiffChunk } from "@codex/shared/contracts";
 import type { DiffChunk } from "../../../../packages/shared/src/contracts";
 
 const BLOCKED_PATHS = [".env", "secrets", "id_rsa"];

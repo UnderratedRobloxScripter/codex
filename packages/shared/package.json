@@ -1,0 +1,17 @@
+{
+  "name": "@codex/shared",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/contracts.js",
+  "types": "src/contracts.ts",
+  "exports": {
+    "./contracts": "./src/contracts.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}

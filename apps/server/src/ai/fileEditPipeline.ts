@@ -1,4 +1,4 @@
-import type { AIToolRequest, AIToolResponse, DiffChunk } from "../../../../packages/shared/src/contracts";
+import type { AIToolRequest, AIToolResponse, DiffChunk } from "@codex/shared/contracts";
 import { enforcePatchPolicy } from "../security/policy";
 
 function buildPatchStub(request: AIToolRequest): DiffChunk[] {
