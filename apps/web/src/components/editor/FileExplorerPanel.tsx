@@ -16,6 +16,15 @@ export function FileExplorerPanel() {
 
   const filesFlat = flatten(files).filter((path) => path.toLowerCase().includes(query.toLowerCase()));
 
+const sampleTree = [
+  "app/page.tsx",
+  "app/layout.tsx",
+  "components/EditorWorkbench.tsx",
+  "lib/ai/pipeline.ts",
+  "styles/globals.css",
+];
+
+export function FileExplorerPanel() {
   return (
     <aside className="rounded-2xl border border-zinc-800 bg-zinc-900/70 p-3">
       <input
@@ -31,6 +40,10 @@ export function FileExplorerPanel() {
             onClick={async () => openTab(file, await fetchFileContent(file))}
             className="cursor-pointer rounded-lg px-2 py-1 hover:bg-zinc-800/80"
           >
+      />
+      <ul className="space-y-1 text-xs text-zinc-300">
+        {sampleTree.map((file) => (
+          <li key={file} className="rounded-lg px-2 py-1 hover:bg-zinc-800/80">
             {file}
           </li>
         ))}

@@ -1,4 +1,5 @@
 import type { DiffChunk, FileNode, Panel } from "@codex/shared/contracts";
+import type { DiffChunk, FileNode, Panel } from "../../../../packages/shared/src/contracts";
 
 export interface EditorTab {
   id: string;

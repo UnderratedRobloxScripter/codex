@@ -1,5 +1,6 @@
 import { EventEmitter } from "node:events";
 import type { AIToolRequest } from "@codex/shared/contracts";
+import type { AIToolRequest } from "../../../../packages/shared/src/contracts";
 import { executeAIEdit } from "../ai/fileEditPipeline";
 
 export class SessionHub extends EventEmitter {

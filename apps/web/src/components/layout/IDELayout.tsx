@@ -3,6 +3,10 @@ import { AIAssistantPanel } from "../ai/AIAssistantPanel";
 import { EditorWorkbench } from "../editor/EditorWorkbench";
 import { FileExplorerPanel } from "../editor/FileExplorerPanel";
 import { TopBar } from "./TopBar";
+import { TopBar } from "./TopBar";
+import { FileExplorerPanel } from "../editor/FileExplorerPanel";
+import { EditorWorkbench } from "../editor/EditorWorkbench";
+import { AIAssistantPanel } from "../ai/AIAssistantPanel";
 import { BottomDock } from "../terminal/BottomDock";
 
 export function IDELayout() {
